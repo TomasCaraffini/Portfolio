@@ -1,0 +1,28 @@
+body {
+  font-family: 'Arial', sans-serif;
+  color: #1a1a1a;
+  background-color: #ffffff;
+}
+
+.avatar {
+  height: 900px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #0a0a0a;
+  text-align: center;
+}
+
+.avatar h1 {
+  font-family: 'Georgia', serif;
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: #0a0a0a;
+}
+
+footer {
+  background-color: #1a1a1a;
+  color: #e6e6e6;
+  padding: 20px 0;
+  text-align: center;
+}

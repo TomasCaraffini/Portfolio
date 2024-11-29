@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+body {
+  font-family: sans-serif;
+}
+section {
+  min-height: calc(100vh - 40px);
+  border: 1px solid #ccc;
+}
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  border: 2px solid #0056b3;
+}
+.Ejercicio1{
+  margin: 20px;
+  padding: 15px;
+  background-color: lightblue;
+}
+.Ejercicio2{
+    background: url(../img/paisaje.jpg) center no-repeat;
+}
+.Ejercicio3{
+    border: solid 2px;color: red; 
+    border-radius: 10px;
+    margin: 20px;
+}
+.Ejercicio4{
+    border: solid 2px;
+    margin: 20px;
+    padding: 20px;
+    font-weight: bold;
+}
+.Ejercicio5{
+    background-color: yellow;
+    text-align: center;
+}
+.Ejercicio6{
+    border: double 5px purple;
+    background: gold;
+    margin:40px;
+}
+.Ejercicio7{
+    background: url(../img/paisaje.jpg) no-repeat ;
+    background-position: bottom right ;
+}
+.Ejercicio8{
+    background-image: url(../img/paisaje.jpg) ;
+    background-size: 50% 100%;
+    background-repeat: repeat-x;
+}
+.Ejercicio9{
+    background:red url(../img/paisaje.jpg) no-repeat ;
+    background-size: 50% ;
+    background-position: top right;
+}
+
+.Ejercicio9 a{
+    background:bisque;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    
+}
+
+
+.Ejercicio10{
+    width: 50%;
+    border:green 3px dotted;
+    padding: 25px;
+}

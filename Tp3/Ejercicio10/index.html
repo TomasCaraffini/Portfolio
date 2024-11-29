@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicios con jQuery Plugins</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <h1>Ejercicios con jQuery Plugins</h1>
+
+  <h2 style="text-align: center;">Carrusel de Imágenes</h2>
+  <div class="owl-carousel">
+    <div class="item">
+      <img src="Imagenes/ferrari-96052_1280.webp" alt="Imagen 1" style="width: 50%; height: auto;">
+    </div>
+    <div class="item">
+      <img src="Imagenes/silueta-aston-martni-amr24-soymotor.png.png" alt="Imagen 2" style="width: 100%; height: auto;">
+    </div>
+    <div class="item">
+      <img src="Imagenes/images.jpg" alt="Imagen 3" style="width: 100%; height: auto;">
+    </div>
+  </div>
+
+  <a href="https://wa.me/1234567890?text=¡Hola!%20Quiero%20más%20información" class="whatsapp-btn">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp"> Contáctanos
+  </a>
+
+  <h2 style="text-align: center;">Animación Parallax</h2>
+  <div id="parallax" class="parallax-container" data-depth="0.5">
+    <h3 style="color: white; text-align: center; padding-top: 100px;">Efecto Parallax</h3>
+  </div>
+
+  
+  <h2 style="text-align: center;">Galería con Lightbox</h2>
+  <div style="text-align: center;">
+    <a href="#3" data-lightbox="galeria" data-title="Imagen 1">
+      <img src="Imagenes/silueta-aston-martni-amr24-soymotor.png.png" alt="Imagen 1" style="width: 200px; margin: 10px;">
+    </a>
+    <a href="#3" data-lightbox="galeria" data-title="Imagen 2">
+      <img src="Imagenes/images.jpg" alt="Imagen 2" style="width: 200px; margin: 10px;">
+    </a>
+  </div>
+
+  
+  <h2 style="text-align: center;">Slider de Contenido</h2>
+  <div class="slider">
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, a ab mollitia at explicabo vitae optio laudantium aperiam consectetur tempora quo animi sunt quae voluptatibus consequatur nam provident eum hic?</div>
+    <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim eligendi alias facilis adipisci voluptates dolor dignissimos sed maiores excepturi a, cumque modi laborum, nihil quibusdam! Saepe distinctio iusto provident debitis.</div>
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit et inventore beatae asperiores, excepturi tempora non, eveniet omnis numquam nobis corrupti amet eum incidunt! Eveniet blanditiis aliquid nam asperiores unde!</div>
+  </div>
+
+  
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+  
+  <script>
+    
+    $(document).ready(function() {
+      $(".owl-carousel").owlCarousel({
+        items: 1,
+        autoplay: true,
+        loop: true,
+        nav: true,
+        navText: ['&#9664;', '&#9654;'],
+      });
+    });
+
+    
+    var scene = document.getElementById('parallax');
+    new Parallax(scene);
+
+    $(document).ready(function() {
+      $('.slider').slick({
+        autoplay: true,
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        adaptiveHeight: true
+      });
+    });
+  </script>
+</body>
+</html>

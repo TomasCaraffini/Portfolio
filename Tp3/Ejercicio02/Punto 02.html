@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog del viaje</title>
+    <style>
+        .container {
+            display: flex; 
+            justify-content: space-between;
+            padding: 20px;
+        }
+        .main-content {
+            flex:3;
+        }          
+        .sidebar {
+            flex: 2;
+            padding: 20px;
+            margin-left: 20px;
+        }
+        .main {
+            width: 100%;
+        }
+        footer{
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            background-color: antiquewhite;
+            clear: both;
+            width: 100%;
+        }
+        #info{
+            background-color: antiquewhite;
+        }
+        body{
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <main class="main-content">
+            <header>
+                <h1>Bariloche</h1>
+                <p>A continuacion van a leer mi experiencia en mi visita al sur argentino</p>
+                <span>Autor Tomas Caraffini <br>Fecha de Publicacion 26.08.24</span>
+            </header>
+            <section>
+                <article>
+                    <h2>Hospedaje</h2>
+                    <p>Me aloje en el hotel Llao Llao, tradicional hotel de Bariloche, Provincia de Río Negro, Argentina. <br> A continuacion, dejo una foto de las vistas desde el baño de la habitacion. </p>
+                    <img src="Bariloche/llaollao2.png" alt="Vista desde el baño">
+                </article>
+            </section>
+            <section>
+                <article>
+                    <h2>Un poco de historia</h2>
+                    <img src="Bariloche/llaollao1.jpg" alt="Foto del hotel a lo lejos">
+                    <p>El 31 de diciembre de 1938, se realizó el primer evento en sus instalaciones, pero fue oficialmente inaugurado el <br> 9 de enero de 1938. Su administración fue confiada al consorcio del Plaza Hotel de Buenos Aires.</p>
+                </article>
+            </section>
+        </main>     
+        <aside class="sidebar">
+            <h3>Fotos que tome durante el viaje</h3>
+            <figure>
+                    <img src="Bariloche/bariloche1.jpg" alt="Centro Civico">
+                    <img src="Bariloche/bariloche2.jpg" alt="Centro Civico">
+                    <img src="Bariloche/bariloche3.jpg" alt="Cartel de Entrada">
+                    <figcaption>Imagenes aleatorias de Bariloche</figcaption>
+            </figure>
+        </aside>
+    </div>
+        <section id="info">
+        <h3>Informacion adicional</h3>
+        <ul>
+            <li>Lugares recomendados <a href="#"></a></li>
+            <li>Redes sociales <a href="#"></a></li>
+        </ul>
+        </section>    
+        <footer>
+            <h4>Copyright @yo 2024</h4>
+        </footer>      
+    </body>
+</html>
